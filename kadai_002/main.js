@@ -99,14 +99,12 @@ const gameOver = id => {
   clearInterval(id);
 
    //ゲーム終了後の表示
-   setTimeout(() => {
-    wrap.textContent = 'タイムアップ！';
-   }, 10);  
+  wrap.textContent = 'タイムアップ！';
    
    // ダイアログを表示
    setTimeout(() => {
     const result = confirm(rankCheck(score));
-   }, 20);
+   }, 10);
   
 
     // OKボタンをクリックされたらリロードする
